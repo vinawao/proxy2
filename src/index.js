@@ -31,8 +31,8 @@ export default {
     const headers = new Headers(request.headers);
 
     if (streamType === 'premium1') {
-      headers.set('Referer', 'https://domain-spesifik-1.com/');
-      headers.set('Origin', 'https://domain-spesifik-1.com');
+      headers.set('Referer', 'https://aesport.tv/');
+      headers.set('Origin', 'https://aesport.tv/');
       headers.set('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)');
     } else if (streamType === 'mobile-stream') {
       headers.set('User-Agent', 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15');
