@@ -35,8 +35,12 @@ export default {
       headers.set('Origin', 'https://aesport.tv/');
       headers.set('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)');
     } else if (streamType === 'mobile-stream') {
-      headers.set('User-Agent', 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15');
+      headers.set('Referer', 'https://aesport.tv/');
+      headers.set('Origin', 'https://aesport.tv/');
+      headers.set('User-Agent', 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1');
     } else {
+      headers.set('Referer', 'https://aesport.tv/');
+      headers.set('Origin', 'https://aesport.tv/');
       headers.set('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)');
     }
 
